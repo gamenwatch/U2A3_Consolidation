@@ -21,7 +21,7 @@ public class U2_A3_ShowWhatYouKnow {
      */
     public static void main(String[] args) {
         Scanner keyedInput = new Scanner(System.in);
-        Random rand = new Random(); //allow random number generation
+        Random randGen = new Random(); //allow random number generation
         
         int total = 0;
         System.out.println("Random Number Guesser");
@@ -32,7 +32,7 @@ public class U2_A3_ShowWhatYouKnow {
                 
         for (int i = 0; i < NEEDED_CONSTANT; i = i+1)
         {
-           randomNumber[i] = 1 + rand.nextInt(3);
+           randomNumber[i] = 1 + randGen.nextInt(3);
            //System.out.println("Generated:"+randomNumber[i]);
         }
         

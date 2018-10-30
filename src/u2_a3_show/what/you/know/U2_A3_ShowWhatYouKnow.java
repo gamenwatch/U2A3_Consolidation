@@ -20,14 +20,18 @@ public class U2_A3_ShowWhatYouKnow {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //declare java functions
         Scanner keyedInput = new Scanner(System.in);
         Random randGen = new Random(); //allow random number generation
-        
+        //declare variables and constants
         int total = 0;
-        System.out.println("Random Number Guesser");
-        System.out.println("We will generate 5 random numbers between 1-3 and you will try to guess what the sum will be.");
         final int NEEDED_CONSTANT = 5;
         
+        //introduction
+        System.out.println("Random Number Guesser");
+        System.out.println("We will generate 5 random numbers between 1-3 and you will try to guess what the sum will be.");
+        
+        //generate random digits
         int []randomNumber = new int [NEEDED_CONSTANT];
                 
         for (int i = 0; i < NEEDED_CONSTANT; i = i+1)
@@ -36,6 +40,7 @@ public class U2_A3_ShowWhatYouKnow {
            //System.out.println("Generated:"+randomNumber[i]);
         }
         
+        //get sum of the random digits
         for (int i = 0; i < NEEDED_CONSTANT; i = i+1)
         {
            total = total+randomNumber[i];
@@ -43,6 +48,7 @@ public class U2_A3_ShowWhatYouKnow {
            
         }
         
+        //User Answers
         System.out.println("What is the sum?");
         
         int userInput = keyedInput.nextInt();
